@@ -10,7 +10,7 @@
    ```docker build -t app_api .```
 
 4) Запуск контейнера сервисов
-   ```sudo docker run -d --name kontainer -p 8022:80 -e REDIS_DSN=redis://{external_ip}:6379 -e RABBIT_DSN=amqp://user:password@{external_ip}:5672/ app_api```
+   ```sudo docker run -d --name kontainer -p 8022:80 -e REDIS_DSN=redis://{external_ip}:6379 -e RABBIT_DSN=amqp://user:password@{external_ip}/ app_api```
    
 
 Переменные строки запуска контейнера:
